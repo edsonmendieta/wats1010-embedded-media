@@ -5,6 +5,395 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
- }
+/*---------------------------------------------------------*\
+                         $Contents
+\*---------------------------------------------------------*/
+/*
+Notes
+Reset
+Shared      Share anything we can across elements.
+Main        HTML, Body, etc. 
+*/
+
+
+
+
+/*---------------------------------------------------------*\
+                         $Imports
+\*---------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+
+
+/*---------------------------------------------------------*\
+                         $Reset
+\*---------------------------------------------------------*/
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+* {
+	text-decoration: none; color: black;
+}
+
+* {
+	font-family: Chewy;
+}
+
+* {
+	list-style-type: none;
+}
+
+
+/*---------------------------------------------------------*\
+                         $Shared
+\*---------------------------------------------------------*/
+
+body {
+	background-color: black;
+}
+
+#watch, #listen {
+	height: 350px;
+}
+
+
+#watch-nav, #listen-nav, #about-nav {
+	padding: 10px 25px;
+	font-weight: bold;
+}
+
+
+	#watch h2, #watch h3, #p-text, #watch p > a {
+		display: flex;
+		justify-content: center;
+	}
+
+	#listen h2, #listen p {
+		display: flex;
+		justify-content: center;
+	}
+
+	#about h2, #about p, #about ul, #about #p-blocks2 > p, #little-div {
+		display: flex;
+		justify-content: center;
+	}
+
+			#about h2 {
+				margin: 5% 0 0 0;
+			}
+
+				.lead, #project-specs, #availability {
+					margin: 0 0 4% 0; 
+				}
+
+			.pratik, .nita {
+				margin-right: 20%;
+			}
+
+				.headshot {
+					border-radius: 80px;
+					border: thick solid gold;
+				}
+
+			.bottom-nav, footer > p, .bottom-nav-list {
+				display: flex;
+				justify-content: center;	
+			}
+
+
+/*---------------------------------------------------------*\
+                         $Main
+\*---------------------------------------------------------*/
+
+
+/*--------------------*\
+         $html
+\*--------------------*/
+
+
+/*--------------------*\
+         $head
+\*--------------------*/
+
+
+/*--------------------*\
+         $body
+\*--------------------*/
+
+#looped-video {
+	position: relative;
+	overflow: hidden;	
+	width: 100%;
+}
+
+	.looped-header {
+		width: 100%;
+	}
+
+	#header-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}
+
+		#header-text h1 {
+			transform: translate(14.6%);
+		} 
+	
+		#header-text p {
+			position: relative;
+			bottom: 350%;
+			white-space: nowrap;
+		}
+
+	.top-nav {
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-35%, -0%);
+		width: 70%;
+	}
+
+		.top-nav #top-nav-list {
+			padding: 0;
+			white-space: nowrap;
+		}
+		
+	
+			.top-nav #top-nav-list li {
+				display: inline-block;
+				width: 30%;
+			}
+				.top-nav #top-nav-list a:hover {
+					color: white;
+				}
+
+
+			#social {
+				position: fixed;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%);
+				border: medium solid gold;
+				background-color: white;
+				border-radius: 5px;
+				z-index: 2;
+}
+
+				#social h2 {
+					transform: translate(20%);
+					color: gold;
+				}
+
+				#social .social-links {
+					left: 60%;
+					transform: translate(-20%);
+				}
+
+
+ 					.social-links li {
+						display: inline-block;
+					}
+
+
+	.main-container {
+		position: relative;
+		height: 600px;
+		background-image: url(../img/official_header.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 60%;
+	}
+
+		
+	.main-container video {
+    	position: absolute;
+   		width: 400px;
+    	top: 8%;
+		right: 7%;
+		border: thick solid gold;
+   	 	border-radius: 5%;
+}
+
+		.main-container video > source {
+	
+		}
+		
+		#watch h2, #listen h2, #about h2 {
+			color: gold;
+		}
+
+
+		#watch h2 {
+			margin: 3% 0 2% 0; 
+		}	
+
+			#watch a {
+				color: gold;
+			}
+
+
+.main-container-listen {
+	position: relative;
+	height: 300px;
+	background-image: url(../img/monkey_crystal_tail.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 60%;
+	}
+
+	#listen {
+		margin-top: 60px;
+	}
+
+		#listen h2 {
+			margin: 1% 0 3% 0;
+		}
+
+		.main-container-listen audio {
+			position: absolute;
+			margin-bottom: 20px;
+			left: 42.5%;
+			top: 40%;
+		}
+
+			.main-container-listen .box {
+				position: absolute;
+				top: 70%;
+				left: 44.5%;
+				height: 40px;
+				border: medium solid black;
+			}
+
+				.main-container-listen .box a {
+					position: relative;
+					top: 6.23px;
+				}
+
+				.main-container-listen .box a:hover {
+					color: white;
+				}
+		
+		#p-blocks {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			left: 42%;
+			bottom: 2%;
+		}
+	
+/* 	#listen {
+		background-image: url(../img/monkey_crystal.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 60%;
+	} */
+
+			.download-button {
+				margin: 0 50px;
+			}
+
+			.weybec-people, #project-info {
+				margin-bottom: 2%;
+			}
+
+
+		#little-div {
+			 margin-top: -3%;
+   			 margin-bottom: 2%;
+		}
+
+		.niyal {
+			margin-left: 3%;
+		}
+
+
+	.lead-text {
+		top: 50%;
+		margin-bottom: 30px;
+		margin-left: 15%;
+	}
+
+	.lead-text span {
+		color: #89DC72;
+		font-size: 50px;
+	}
+
+
+
+.main-container-about {
+	position: relative;
+	height: 602.453px;
+	background-image: url(../img/monkaa_monkeyhang.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 60%;
+	}
+
+	
+footer {
+	margin-top: 150px;
+}	
+
+	footer p, .license i, .license a {
+	color: gold;
+}	
+
+
+			#availability a {
+				color: white;
+			}
+
+		.bottom-nav {
+			margin-top: 5%;
+			margin-bottom: 2%;
+		}
+
+			.bottom-nav-list a {
+				color: gold;
+			}
+
+			.bottom-nav-list a:hover {
+				color: white;
+			}
+
+				.bottom-nav1 a {
+					position: absolute; 
+					left: 25%
+				}
+
+				.bottom-nav3 a {
+					position: absolute;
+					right: 25%;
+				}
+
+
+
+
+/* .main-container {
+	position: relative;
+	width: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
